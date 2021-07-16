@@ -84,7 +84,7 @@ html {
     .cardGroup {
         display: flex;
         flex-direction: column;
-        max-width: 300px;
+        max-width: 320px;
         height: 710px;
     }
 }
@@ -92,8 +92,8 @@ html {
     .cardGroup {
         display: flex;
         flex-direction: column;
-        max-width: 80%;
-        height: 500px;
+        max-width: 320px;
+        height: 600px;
         margin: 0 auto;
     }
     .card__descriptionText {
