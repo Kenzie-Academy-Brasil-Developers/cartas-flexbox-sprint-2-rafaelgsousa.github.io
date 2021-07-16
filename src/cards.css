@@ -15,6 +15,7 @@ html {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    height: 200px;
 }
 
 .card__description {
@@ -26,7 +27,10 @@ html {
     align-items: center;
 }
 
-.card__descriptionIcon {font-size: 32px; margin-bottom: 10px;}
+.card__descriptionIcon {
+    font-size: 32px; 
+    margin-bottom: 10px;
+}
 
 .card__descriptionText {
     color: #57727C;
@@ -76,10 +80,28 @@ html {
    flex-basis: 0;
 }
 
-@media (max-width:768px) {
+@media (min-width:361px) and (max-width:768px) {
     .cardGroup {
-    flex-direction: column;
-    max-width: 300px;
-    height: 710px;
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        height: 710px;
+    }
+}
+@media (max-width:360px) {
+    .cardGroup {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        height: 500px;
+        margin: 0 auto;
+    }
+    .card__descriptionText {
+        color: #242e31;
+        font-size: 12px;
+        text-align: center;
+    }
+    .card__price {
+        color: #242e31;
     }
 }
